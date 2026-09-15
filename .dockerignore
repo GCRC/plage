@@ -20,8 +20,8 @@ __pycache__
 *.swp
 
 # Build artifacts (rebuilt in Docker)
-src/age_plotter/static/css/styles.css
-src/age_plotter/static/vendor/
+src/plage/static/css/styles.css
+src/plage/static/vendor/
 
 # Local config
 connections.json

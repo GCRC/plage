@@ -13,7 +13,7 @@ Web UI for querying Neo4j and PostgreSQL AGE graph databases.
 ## Project Structure
 
 ```
-src/age_plotter/
+src/plage/
 ├── main.py              # FastAPI app setup, middleware
 ├── __main__.py          # Entry point (uvicorn runner)
 ├── models/
@@ -115,5 +115,5 @@ npm run build          # Build JS bundle + copy Monaco + compile Tailwind
 npm run watch:css      # Watch Tailwind changes
 npm run watch:js       # Watch JS changes
 uv sync                # Install Python dependencies
-uv run python -m age_plotter --reload  # Run with hot reload
+uv run python -m plage --reload  # Run with hot reload
 ```

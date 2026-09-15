@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/age_plotter/templates/**/*.html',
-    './src/age_plotter/static/js/**/*.js',
+    './src/plage/templates/**/*.html',
+    './src/plage/static/js/**/*.js',
   ],
   theme: {
     extend: {},

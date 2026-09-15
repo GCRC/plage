@@ -2,7 +2,7 @@ import * as esbuild from 'esbuild';
 import { existsSync, mkdirSync } from 'fs';
 import { dirname } from 'path';
 
-const outdir = 'src/age_plotter/static/vendor';
+const outdir = 'src/plage/static/vendor';
 
 // Ensure output directory exists
 if (!existsSync(outdir)) {
@@ -12,7 +12,7 @@ if (!existsSync(outdir)) {
 const isWatch = process.argv.includes('--watch');
 
 const buildOptions = {
-    entryPoints: ['src/age_plotter/static/js/vendor.entry.js'],
+    entryPoints: ['src/plage/static/js/vendor.entry.js'],
     bundle: true,
     outfile: `${outdir}/vendor.bundle.js`,
     format: 'iife',

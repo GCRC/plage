@@ -11,7 +11,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(__dirname, '..');
 
 const src = resolve(projectRoot, 'node_modules/monaco-editor/min');
-const dest = resolve(projectRoot, 'src/age_plotter/static/vendor/monaco');
+const dest = resolve(projectRoot, 'src/plage/static/vendor/monaco');
 
 // Clean destination
 if (existsSync(dest)) {

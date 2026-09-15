@@ -148,7 +148,7 @@ def get_connection_store() -> ConnectionStore:
         presets: list[StoredConnection] = []
 
         # Load presets from JSON file if configured
-        connections_file = os.environ.get("AGE_PLOTTER_CONNECTIONS")
+        connections_file = os.environ.get("PLAGE_CONNECTIONS")
         if connections_file:
             presets = _load_presets_from_json(Path(connections_file))
 

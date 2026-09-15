@@ -5,10 +5,10 @@
   "scripts": {
     "build": "npm run build:js && npm run build:css && npm run build:monaco",
     "build:js": "node scripts/esbuild.mjs",
-    "build:css": "tailwindcss -i src/age_plotter/static/css/input.css -o src/age_plotter/static/css/styles.css --minify",
+    "build:css": "tailwindcss -i src/plage/static/css/input.css -o src/plage/static/css/styles.css --minify",
     "build:monaco": "node scripts/copy-monaco.mjs",
     "watch:js": "node scripts/esbuild.mjs --watch",
-    "watch:css": "tailwindcss -i src/age_plotter/static/css/input.css -o src/age_plotter/static/css/styles.css --watch"
+    "watch:css": "tailwindcss -i src/plage/static/css/input.css -o src/plage/static/css/styles.css --watch"
   },
   "dependencies": {
     "cytoscape": "^3.33.1",

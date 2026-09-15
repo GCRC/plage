@@ -7,8 +7,8 @@ RUN npm ci
 
 COPY scripts/ ./scripts/
 COPY tailwind.config.js ./
-COPY src/age_plotter/static/ ./src/age_plotter/static/
-COPY src/age_plotter/templates/ ./src/age_plotter/templates/
+COPY src/plage/static/ ./src/plage/static/
+COPY src/plage/templates/ ./src/plage/templates/
 
 RUN npm run build
 
@@ -26,17 +26,17 @@ COPY pyproject.toml ./
 COPY src/ ./src/
 
 # Copy built frontend assets
-COPY --from=frontend /app/src/age_plotter/static/css/ ./src/age_plotter/static/css/
-COPY --from=frontend /app/src/age_plotter/static/vendor/ ./src/age_plotter/static/vendor/
+COPY --from=frontend /app/src/plage/static/css/ ./src/plage/static/css/
+COPY --from=frontend /app/src/plage/static/vendor/ ./src/plage/static/vendor/
 
 # Install Python dependencies
 RUN uv pip install --system --no-cache .
 
 # Default environment
-ENV AGE_PLOTTER_HOST=0.0.0.0
-ENV AGE_PLOTTER_PORT=8100
+ENV PLAGE_HOST=0.0.0.0
+ENV PLAGE_PORT=8100
 
 EXPOSE 8100
 
 # Run without reload in production
-CMD ["python", "-c", "import uvicorn; uvicorn.run('age_plotter.main:app', host='0.0.0.0', port=int(__import__('os').environ.get('AGE_PLOTTER_PORT', '8100')))"]
+CMD ["python", "-c", "import uvicorn; uvicorn.run('plage.main:app', host='0.0.0.0', port=int(__import__('os').environ.get('PLAGE_PORT', '8100')))"]

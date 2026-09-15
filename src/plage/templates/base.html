@@ -116,7 +116,7 @@
     function updateMonacoTheme() {
         if (!window.monaco || !window.monacoEditor) return;
 
-        const theme = localStorage.getItem('age_plotter_theme') || 'dark';
+        const theme = localStorage.getItem('plage_theme') || 'dark';
         const isDark = darkThemes.includes(theme);
         const colors = getThemeColors();
 
@@ -155,7 +155,7 @@
 
     function setTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('age_plotter_theme', theme);
+        localStorage.setItem('plage_theme', theme);
         setTimeout(() => {
             updateMonacoTheme();
             updateCytoscapeTheme();
@@ -164,7 +164,7 @@
 
     // Restore saved theme on load
     (function() {
-        const saved = localStorage.getItem('age_plotter_theme');
+        const saved = localStorage.getItem('plage_theme');
         if (saved) {
             document.documentElement.setAttribute('data-theme', saved);
             const select = document.getElementById('theme-select');

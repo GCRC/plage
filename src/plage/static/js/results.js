@@ -18,7 +18,7 @@ window.isLoadingFromHistory = false;  // Flag to prevent draft overwrite during 
 function getStorageKey() {
     const name = window.connectionConfig?.name || 'default';
     const sanitized = name.replace(/[^a-zA-Z0-9_-]/g, '_').substring(0, 50);
-    return `age_plotter_history_${sanitized}`;
+    return `plage_history_${sanitized}`;
 }
 
 /**

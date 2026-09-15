@@ -33,7 +33,7 @@ npm run build
 uv sync
 
 # Run
-uv run python -m age_plotter
+uv run python -m plage
 ```
 
 Open http://localhost:8100
@@ -54,9 +54,9 @@ Environment variables:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `AGE_PLOTTER_HOST` | `127.0.0.1` | Host to bind |
-| `AGE_PLOTTER_PORT` | `8100` | Port to bind |
-| `AGE_PLOTTER_CONNECTIONS` | - | Path to JSON file with preconfigured connections |
+| `PLAGE_HOST` | `127.0.0.1` | Host to bind |
+| `PLAGE_PORT` | `8100` | Port to bind |
+| `PLAGE_CONNECTIONS` | - | Path to JSON file with preconfigured connections |
 
 ### Preconfigured Connections
 
@@ -88,8 +88,8 @@ Create a `connections.json` file (see `connections.example.json`):
 Then:
 
 ```bash
-export AGE_PLOTTER_CONNECTIONS=/path/to/connections.json
-uv run python -m age_plotter
+export PLAGE_CONNECTIONS=/path/to/connections.json
+uv run python -m plage
 ```
 
 ## Development
@@ -100,7 +100,7 @@ npm run watch:css
 npm run watch:js
 
 # Run with auto-reload
-uv run python -m age_plotter --reload
+uv run python -m plage --reload
 ```
 
 ## License
