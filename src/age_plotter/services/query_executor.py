@@ -414,7 +414,7 @@ async def _execute_age(
 
     try:
         # Load AGE extension
-        await conn.execute(sql.SQL("LOAD 'age'"))
+        await conn.execute(sql.SQL("LOAD '$libdir/plugins/age.so'"))
         await conn.execute(sql.SQL("SET search_path = ag_catalog, '$user', public"))
 
         # Get backend PID for cancellation

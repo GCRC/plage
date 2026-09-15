@@ -22,7 +22,7 @@ class AgeClient:
             password=self.config.password,
         )
         # Load AGE extension
-        await self.conn.execute("LOAD 'age';")
+        await self.conn.execute("LOAD '$libdir/plugins/age.so';")
         await self.conn.execute("SET search_path = ag_catalog, '$user', public;")
 
     async def test_connection(self) -> bool:

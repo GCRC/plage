@@ -56,7 +56,7 @@ async def introspect_age(config: AgeConnection) -> GraphSchema:
         password=config.password,
     )
     try:
-        await conn.execute("LOAD 'age';")
+        await conn.execute("LOAD '$libdir/plugins/age.so';")
         await conn.execute("SET search_path = ag_catalog, '$user', public;")
 
         # Get graph OID
