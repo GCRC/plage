@@ -1,4 +1,4 @@
-# plage (forked from Age Plotter by https://github.com/wedgemaster)
+# plage (forked from Age Plotter)
 
 A web UI for querying PostgreSQL AGE graph databases.
 
