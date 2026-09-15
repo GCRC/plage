@@ -15,7 +15,7 @@ TEMPLATES_DIR = BASE_DIR / "templates"
 STATIC_DIR = BASE_DIR / "static"
 
 # App setup
-app = FastAPI(title="Age Plotter")
+app = FastAPI(title="plage")
 
 # Session middleware with secret key (in production, use env var)
 app.add_middleware(SessionMiddleware, secret_key="dev-secret-key-change-in-prod")

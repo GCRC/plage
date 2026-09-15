@@ -1,4 +1,4 @@
-"""Run the Age Plotter application."""
+"""Run the plage application."""
 
 import os
 

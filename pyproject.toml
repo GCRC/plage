@@ -1,5 +1,5 @@
 [project]
-name = "age-plotter"
+name = "plage"
 version = "0.1.0"
 description = "Web UI for Neo4j and PostgreSQL AGE graph queries"
 requires-python = ">=3.11"

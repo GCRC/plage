@@ -1,6 +1,6 @@
 services:
-  age-plotter:
-    image: ghcr.io/wedgemaster/age-plotter:main
+  plage:
+    image: ghcr.io/wedgemaster/plage:main
     ports:
       - "${AGE_PLOTTER_PORT:-8100}:${AGE_PLOTTER_PORT:-8100}"
     environment:
