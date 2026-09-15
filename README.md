@@ -1,6 +1,10 @@
-# Age Plotter
+# plage (forked from Age Plotter by https://github.com/wedgemaster)
 
-A modern web UI for querying Neo4j and PostgreSQL AGE graph databases. Built as a lightweight alternative to Neo4j Browser and AGViewer.
+A web UI for querying PostgreSQL AGE graph databases.
+
+Originally built by [wedgemaster](https://github.com/wedgemaster) as a lightweight alternative to Neo4j Browser and AGE Viewer with Neo4j support in addition to AGE.
+
+The [Geomatics and Cartographic Research Centre](https://gcrc.carleton.ca) is beginning to experiment with using it in AGE-based projects and enhancing it for our needs. Neo4j support may break or be removed in time.
 
 ![Age Plotter Screenshot](docs/screenshot.png)
 
